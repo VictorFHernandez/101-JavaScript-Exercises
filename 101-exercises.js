@@ -452,6 +452,9 @@ addToDone("Exercise 24 is correct.");
 // Exercise 25
 // Write a function definition named absoluteValue that takes in a number and returns the absolute value of the provided number
 
+function absoluteValue(number) {
+    return Math.abs(number);
+}
 
 assert(absoluteValue(4), 4, "Exercise 25");
 assert(absoluteValue(-5), 5, "Exercise 25");
