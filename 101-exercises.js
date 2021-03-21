@@ -293,7 +293,7 @@ addToDone("Exercise 13 is correct.");
 // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
 
 function isOdd(number) {
-  return Math.abs(number % 2) == 1;
+  return Math.abs(number % 2) === 1;
 }
 
 assert(isOdd(positiveOddNumber), true, "Exercise 14");
@@ -334,10 +334,8 @@ addToDone("Exercise 16 is correct.");
 // Exercise 17
 // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
 function isPositiveOdd(number) {
-  if(Math.abs(number % 2) === 1 && number > 0) {
-    return true;
-  }
-  return false;
+  return Math.abs(number % 2) === 1 && number > 0;
+
 }
 
 assert(isPositiveOdd(3), true, "Exercise 17");
@@ -351,11 +349,9 @@ addToDone("Exercise 17 is correct.");
 // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
 
 function isPositiveEven(number){
-    if(number % 2 === 0 && number > 0){
-        return true;
-    }
-    return false;
+    return number % 2 === 0 && number > 0;
 }
+
 
 
 assert(isPositiveEven(4), true, "Exercise 18");
@@ -367,6 +363,10 @@ addToDone("Exercise 18 is correct.");
 
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
+
+function isNegativeOdd(number){
+    return Math.abs(number % 2) === 1 && number < 0;
+}
 
 assert(isNegativeOdd(-3), true, "Exercise 19");
 assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
