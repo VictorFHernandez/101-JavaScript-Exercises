@@ -378,6 +378,10 @@ addToDone("Exercise 19 is correct.");
 // Exercise 20
 // Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is both less than zero and even.
 
+function isNegativeEven(number) {
+    return number % 2 === 0 && number < 0;
+}
+
 assert(isNegativeEven(-4), true, "Exercise 20");
 assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");
 assert(isNegativeEven(positiveEvenNumber), false, "Exercise 20");
