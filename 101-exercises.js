@@ -471,6 +471,10 @@ addToDone("Exercise 25 is correct.");
 // Exercise 26
 // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
 
+function isMultipleOfThree(number) {
+    return (number % 3) === 0;
+}
+
 assert(isMultipleOfThree(3), true, "Exercise 26");
 assert(isMultipleOfThree(15), true, "Exercise 26");
 assert(isMultipleOfThree(9), true, "Exercise 26");
