@@ -485,6 +485,10 @@ addToDone("Exercise 26 is correct.");
 // Exercise 27
 // Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
 
+function isMultipleOfFive(number) {
+    return (number % 5) === 0;
+}
+
 assert(isMultipleOfFive(3), false, "Exercise 27");
 assert(isMultipleOfFive(15), true, "Exercise 27");
 assert(isMultipleOfFive(9), false, "Exercise 27");
