@@ -499,6 +499,10 @@ addToDone("Exercise 27 is correct.");
 // Exercise 28
 // Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
 
+function isMultipleOfBothThreeAndFive(number) {
+    return (number % 3) === 0 && (number % 5) === 0;
+}
+
 assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
