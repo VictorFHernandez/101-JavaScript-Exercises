@@ -542,6 +542,10 @@ addToDone("Exercise 30 is correct.");
 // Exercise 31
 // Write a function definition named cube that takes in a number and returns the number times itself, times itself.
 
+function cube(number) {
+    return number ** 3;
+}
+
 assert(cube(3), 27, "Exercise 31");
 assert(cube(2), 8, "Exercise 31");
 assert(cube(5), 125, "Exercise 31");
