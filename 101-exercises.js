@@ -559,6 +559,10 @@ addToDone("Exercise 31 is correct.");
 // Exercise 32
 // Write a function definition named squareRoot that takes in a number and returns the square root of the provided number
 
+function squareRoot(number) {
+    return Math.sqrt(number);
+}
+
 assert(squareRoot(4), 2.0, "Exercise 32");
 assert(squareRoot(64), 8.0, "Exercise 32");
 assert(squareRoot(81), 9.0, "Exercise 32");
