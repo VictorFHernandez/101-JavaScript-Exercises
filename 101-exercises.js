@@ -620,6 +620,10 @@ addToDone("Exercise 36 is correct.");
 // Exercise 37
 // Write a function definition named remainder that takes in two numbers and returns the remainder of first argument divided by the second argument.
 
+function remainder(input1, input2){
+    return input1 % input2;
+}
+
 assert(remainder(3, 3), 0, "Exercise 37");
 assert(remainder(5, 2), 1, "Exercise 37");
 assert(remainder(7, 5), 2, "Exercise 37");
