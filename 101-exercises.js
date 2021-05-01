@@ -595,6 +595,10 @@ addToDone("Exercise 34 is correct.");
 // Exercise 35
 // Write a function definition named divide that takes in two numbers and returns the first argument divided by the second argument.
 
+function divide(input1, input2){
+    return input1 / input2;
+}
+
 assert(divide(27, 9), 3, "Exercise 35");
 assert(divide(15, 3), 5, "Exercise 35");
 assert(divide(5, 2), 2.5, "Exercise 35");
@@ -603,6 +607,10 @@ addToDone("Exercise 35 is correct.");
 
 // Exercise 36
 // Write a function definition named quotient that takes in two numbers and returns the quotient of dividing the first argument by the second argument.
+
+function quotient(input1, input2){
+    return Math.floor(input1 / input2);
+}
 
 assert(quotient(27, 9), 3, "Exercise 36");
 assert(quotient(5, 2), 2, "Exercise 36");
