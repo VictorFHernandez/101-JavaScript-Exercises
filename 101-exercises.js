@@ -571,6 +571,10 @@ addToDone("Exercise 32 is correct.");
 // Exercise 33
 // Write a function definition named subtract that takes in two numbers and returns the first minus the second argument.
 
+function subtract(input1, input2){
+    return input1 - input2;
+}
+
 assert(subtract(8, 6), 2, "Exercise 33");
 assert(subtract(27, 4), 23, "Exercise 33");
 assert(subtract(12, 2), 10, "Exercise 33");
