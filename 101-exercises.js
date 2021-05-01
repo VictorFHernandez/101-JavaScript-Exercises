@@ -671,6 +671,10 @@ addToDone("Exercise 40 is correct.");
 // Exercise 41
 // Write a function definition named areaOfCircle that takes in a number representing a circle's radius and returns the area of the circle
 
+function areaOfCircle(radius){
+    return ((Math.PI * (radius ** 2)));
+}
+
 assert(areaOfCircle(3), 28.274333882308138, "Exercise 41");
 assert(areaOfCircle(5), 78.53981633974483, "Exercise 41");
 assert(areaOfCircle(7), 153.93804002589985, "Exercise 41");
@@ -678,6 +682,10 @@ addToDone("Exercise 41 is correct.");
 
 // Exercise 42
 // Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
+
+function circumference(radius){
+    return 2 * Math.PI * radius;
+}
 
 assert(circumference(3), 18.84955592153876, "Exercise 42");
 assert(circumference(5), 31.41592653589793, "Exercise 42");
