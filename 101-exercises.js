@@ -658,6 +658,10 @@ addToDone("Exercise 39 is correct.");
 // Exercise 40
 // Write a function definition named areaOfRectangle that takes in two numbers and returns the product.
 
+function areaOfRectangle(lenght, width){
+    return lenght * width;
+}
+
 assert(areaOfRectangle(1, 3), 3, "Exercise 40");
 assert(areaOfRectangle(5, 2), 10, "Exercise 40");
 assert(areaOfRectangle(2, 7), 14, "Exercise 40");
