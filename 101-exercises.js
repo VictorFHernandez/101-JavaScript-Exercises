@@ -583,6 +583,10 @@ addToDone("Exercise 33 is correct.");
 // Exercise 34
 // Write a function definition named multiply that takes in two numbers and returns the first times the second argument.
 
+function multiply(input1, input2){
+    return input1 * input2;
+}
+
 assert(multiply(2, 1), 2, "Exercise 34");
 assert(multiply(3, 5), 15, "Exercise 34");
 assert(multiply(5, 2), 10, "Exercise 34");
