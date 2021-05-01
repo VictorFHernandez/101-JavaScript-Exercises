@@ -728,6 +728,11 @@ addToDone("Exercise 43 is correct.");
 // Exercise 44
 // Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
 
+function hasVowels(input){
+    input = input.toLowerCase();
+    return (input.includes("a") || input.includes("e") || input.includes("i") || input.includes("o") || input.includes("u"));
+}
+
 assert(hasVowels("banana"), true, "Exercise 44");
 assert(hasVowels("ubuntu"), true, "Exercise 44");
 assert(hasVowels("QQQQ"), false, "Exercise 44");
