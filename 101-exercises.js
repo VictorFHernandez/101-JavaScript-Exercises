@@ -644,6 +644,10 @@ addToDone("Exercise 38 is correct.");
 // Exercise 39
 // Write a function definition named timesTwoPlusThree that takes in a number, multiplies it by two, adds 3 and returns the result.
 
+function timesTwoPlusThree(input){
+    return (input * 2) + 3;
+}
+
 assert(timesTwoPlusThree(0), 3, "Exercise 39");
 assert(timesTwoPlusThree(1), 5, "Exercise 39");
 assert(timesTwoPlusThree(2), 7, "Exercise 39");
