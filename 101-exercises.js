@@ -742,6 +742,17 @@ addToDone("Exercise 44 is correct.");
 // Exercise 45
 // Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
 
+function countVowels(value){
+    var count = 0;
+    for (let i = 0; i < value.length; i++){
+        var letter = value[i];
+        if (isVowel(letter)){
+            count++;
+        }
+    }
+    return count
+}
+
 assert(countVowels("banana"), 3, "Exercise 45");
 assert(countVowels("ubuntu"), 3, "Exercise 45");
 assert(countVowels("mango"), 2, "Exercise 45");
