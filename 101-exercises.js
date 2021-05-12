@@ -820,6 +820,10 @@ addToDone("Exercise 49 is correct.");
 // Exercise 50
 // Write a function definition named first that takes in sequence and returns the first value of that sequence.
 
+function first(Sequence){
+    return Sequence[0];
+}
+
 assert(first("ubuntu"), "u", "Exercise 50");
 assert(first([1, 2, 3]), 1, "Exercise 50");
 assert(first(["JS", "is", "awesome"]), "JS", "Exercise 50");
