@@ -844,6 +844,10 @@ addToDone("Exercise 51 is correct.");
 // Exercise 52
 // Write a function definition named third that takes in sequence and returns the third value of that sequence.
 
+function third(Sequence){
+    return Sequence[2];
+}
+
 assert(third("ubuntu"), "u", "Exercise 52");
 assert(third([1, 2, 3]), 3, "Exercise 52");
 assert(third(["JS", "is", "awesome"]), "awesome", "Exercise 52");
