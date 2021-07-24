@@ -1000,6 +1000,17 @@ addToDone("Exercise 61 is correct.");
 // Exercise 62
 // Write a function definition named median that takes in sequence of numbers and returns the average value
 
+function median(sequence){
+    const mid = Math.floor(sequence.length/2);
+    sequence = sequence.sort();
+    if (sequence.length % 2 !== 0){
+        return sequence[mid];
+    }
+    else {
+        return ((sequence[mid-1] + sequence[mid]) / 2);
+    }
+}
+
 assert(median([1, 2, 3, 4, 5]), 3.0, "Exercise 62");
 assert(median([1, 2, 3]), 2.0, "Exercise 62");
 assert(median([1, 5, 6]), 5.0, "Exercise 62");
