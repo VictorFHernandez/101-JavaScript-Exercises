@@ -1073,6 +1073,16 @@ addToDone("Exercise 66 is correct.");
 // Exercise 67
 // Write a function definition named onlyOddNumbers that takes in sequence of numbers and returns the odd numbers in an array.
 
+function onlyOddNumbers(sequence){
+    var oddNumbers = []
+    for(var i = 0; i < sequence.length; i++){
+        if(isOdd(sequence[i])) {
+            oddNumbers.push(sequence[i])
+        }
+    }
+    return oddNumbers
+}
+
 assert(onlyOddNumbers([1, 2, 3]), [1, 3], "Exercise 67");
 assert(
   onlyOddNumbers([-5, -4, -3, -2, -1, 1, 2, 3, 4, 5]),
