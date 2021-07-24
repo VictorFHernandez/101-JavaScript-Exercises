@@ -1050,7 +1050,7 @@ addToDone("Exercise 64 is correct.");
 // Write a function definition named getHighestNumber that takes in sequence of numbers and returns the largest number.
 
 function getHighestNumber(sequence){
-    return Math.max.apply(Math, sequence)
+    return Math.max.apply(Math, sequence);
 }
 
 assert(getHighestNumber([1, 2, 3]), 3, "Exercise 65");
@@ -1060,6 +1060,10 @@ addToDone("Exercise 65 is correct.");
 
 // Exercise 66
 // Write a function definition named getSmallestNumber that takes in sequence of numbers and returns the smallest number.
+
+function getSmallestNumber(sequence){
+    return Math.min.apply(Math, sequence);
+}
 
 assert(getSmallestNumber([1, 2, 3]), 1, "Exercise 66");
 assert(getSmallestNumber([3, 5, 9, 8, 1]), 1, "Exercise 66");
