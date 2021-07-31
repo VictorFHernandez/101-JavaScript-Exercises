@@ -1161,6 +1161,16 @@ addToDone("Exercise 70 is correct.");
 // Exercise 71
 // Write a function definition named hasEvens that takes in sequence of numbers and returns true if there are any even numbers in the sequence
 
+function hasEvens(sequence){
+    var evenNumbers = []
+    for(var i = 0; i < sequence.length; i++){
+        if(sequence[i] % 2 === 0) {
+            return true
+        }
+    }
+    return false
+}
+
 assert(hasEvens([1, 2, 3]), true, "Exercise 71");
 assert(hasEvens([2, 5, 6]), true, "Exercise 71");
 assert(hasEvens([3, 3, 3]), false, "Exercise 71");
