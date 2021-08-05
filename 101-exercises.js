@@ -1199,7 +1199,15 @@ addToDone("Exercise 72 is correct.");
 // Exercise 73
 // Write a function definition named hasOdds that takes in sequence of numbers and returns true if there are any odd numbers in the sequence
 
-
+function hasOdds(sequence){
+    var oddNumbers = []
+    for(var i = 0; i < sequence.length; i++){
+        if(sequence[i] % 2 === 1){
+            return true;
+        }
+    }
+    return false;
+}
 
 assert(hasOdds([1, 2, 3]), true, "Exercise 73");
 assert(hasOdds([2, 5, 6]), true, "Exercise 73");
