@@ -1218,6 +1218,16 @@ addToDone("Exercise 73 is correct.");
 // Exercise 74
 // Write a function definition named countOdds that takes in sequence of numbers and returns a count of the any odd numbers in the sequence
 
+function countOdds(sequence){
+    var countOdds = 0;
+    for(var i = 0; i < sequence.length; i++){
+        if(sequence[i] % 2 === 1){
+            countOdds++
+        }
+    }
+    return countOdds;
+}
+
 assert(countOdds([1, 2, 3]), 2, "Exercise 74");
 assert(countOdds([2, 5, 6]), 1, "Exercise 74");
 assert(countOdds([3, 3, 3]), 3, "Exercise 74");
