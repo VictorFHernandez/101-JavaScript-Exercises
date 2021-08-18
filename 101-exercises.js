@@ -1293,6 +1293,16 @@ addToDone("Exercise 77 is correct.");
 // Exercise 78
 // Write a function definition named onlyPositiveOdds that takes in sequence of numbers and returns an array containing all the positive odd numbers from the sequence
 
+function onlyPositiveOdds(sequence){
+    var positiveOdds = [];
+    for(var i = 0; i < sequence.length; i++){
+        if(sequence[i] >= 0 && sequence[i] % 2 === 1){
+            positiveOdds.push(sequence[i])
+        }
+    }
+    return positiveOdds;
+}
+
 assert(onlyPositiveOdds([1, -2, 3]), [1, 3], "Exercise 78");
 assert(onlyPositiveOdds([2, -5, -6]), [], "Exercise 78");
 assert(onlyPositiveOdds([3, 3, 4, 6]), [3, 3], "Exercise 78");
