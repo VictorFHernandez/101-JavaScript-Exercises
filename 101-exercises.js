@@ -1312,6 +1312,16 @@ addToDone("Exercise 78 is correct.");
 // Exercise 79
 // Write a function definition named onlyNegativeEvens that takes in sequence of numbers and returns an array containing all the negative even numbers from the sequence
 
+function onlyNegativeEvens(sequence){
+    var negativeEvens = [];
+    for(var i = 0; i < sequence.length; i++){
+        if(sequence[i] < 0 && sequence[i] % 2 === 0){
+            negativeEvens.push(sequence[i])
+        }
+    }
+    return negativeEvens;
+}
+
 assert(onlyNegativeEvens([1, -2, 3]), [-2], "Exercise 79");
 assert(onlyNegativeEvens([2, -5, -6]), [-6], "Exercise 79");
 assert(onlyNegativeEvens([3, 3, 4, 6]), [], "Exercise 79");
