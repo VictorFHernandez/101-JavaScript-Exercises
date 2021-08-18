@@ -1274,6 +1274,16 @@ addToDone("Exercise 76 is correct.");
 // Exercise 77
 // Write a function definition named onlyPositiveEvens that takes in sequence of numbers and returns an array containing all the positive evens from the sequence
 
+function onlyPositiveEvens(sequence){
+    var positiveEvens = [];
+    for(var i = 0; i < sequence.length; i++){
+        if(sequence[i] >= 0 && sequence[i] % 2 === 0){
+            positiveEvens.push(sequence[i])
+        }
+    }
+    return positiveEvens;
+}
+
 assert(onlyPositiveEvens([1, -2, 3]), [], "Exercise 77");
 assert(onlyPositiveEvens([2, -5, -6]), [2], "Exercise 77");
 assert(onlyPositiveEvens([3, 3, 4, 6]), [4, 6], "Exercise 77");
